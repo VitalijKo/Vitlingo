@@ -1,0 +1,30 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+
+export const SidebarItem = ({ label, icon, href }) => {
+  const pathname = usePathname();
+  const active = pathname === href;
+
+  return (
+    <Button
+      variant={active ? 'sidebarOutline'  : 'sidebar'}
+      className='h-[52px] justify-start'
+      asChild
+    >
+      <Link href={href}>
+        <Image
+          src={icon}
+          alt={label}
+          width={32}
+          height={32}
+          className='mr-5'
+        />
+        {label}
+      </Link>
+    </Button>
+  );
+}
