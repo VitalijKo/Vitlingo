@@ -4,7 +4,7 @@ import { InfinityIcon } from 'lucide-react';
 import { courses } from '@/db/schema';
 import { Button } from '@/components/ui/button';
 
-export const UserProgress = ({ activeCourse,  points,  lifes, hasActiveSubscription }) => {
+export const UserProgress = ({ activeCourse, points, lifes, hasActiveSubscription }) => {
   return (
     <div className='flex w-full justify-between items-center gap-x-2'>
       <Link href='/courses'>
@@ -12,7 +12,7 @@ export const UserProgress = ({ activeCourse,  points,  lifes, hasActiveSubscript
           <Image
             width={32}
             height={32}
-            src={activeCourse.imageSrc}
+            src={activeCourse.image}
             alt={activeCourse.title}
             className='rounded-md border'
           />

@@ -17,10 +17,10 @@ export const SidebarItem = ({ label, icon, href }) => {
     >
       <Link href={href}>
         <Image
-          src={icon}
-          alt={label}
           width={32}
           height={32}
+          src={icon}
+          alt={label}
           className='mr-5'
         />
         {label}

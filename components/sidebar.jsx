@@ -17,7 +17,7 @@ export const Sidebar = ({ className }) => {
     )}>
       <Link href='/learn'>
         <div className='flex items-center gap-x-3 pt-8 pb-7 pl-4'>
-          <Image src='/logo.svg' height={40} width={40} alt='Logo' />
+          <Image src='/logo.png' height={40} width={40} alt='Logo' />
           <h1 className='font-extrabold text-2xl text-green-600 tracking-wide'>
             Vitlingo
           </h1>
@@ -27,22 +27,22 @@ export const Sidebar = ({ className }) => {
         <SidebarItem 
           label='Learn' 
           href='/learn'
-          iconSrc='/learn.svg'
+          icon='/learn.svg'
         />
         <SidebarItem 
           label='Leaderboard' 
           href='/leaderboard'
-          iconSrc='/leaderboard.svg'
+          icon='/leaderboard.svg'
         />
         <SidebarItem 
           label='quests' 
           href='/quests'
-          iconSrc='/quests.svg'
+          icon='/quests.svg'
         />
         <SidebarItem 
           label='shop' 
           href='/shop'
-          iconSrc='/shop.svg'
+          icon='/shop.svg'
         />
       </div>
       <div className='p-4'>

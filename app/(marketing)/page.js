@@ -18,7 +18,7 @@ export default function Home() {
         <Image src='/logo.png' fill alt='Logo' />
       </div>
       <div className='flex flex-col items-center gap-y-8'>
-        <h1 className='max-w-[480px] font-bold text-xl lg:text-3xl text-neutral-600 text-center'>
+        <h1 className='max-w-[480px] font-bold text-center text-xl lg:text-3xl text-neutral-600'>
           Learn, practice, and master new languages with Vitlingo.
         </h1>
         <div className='flex flex-col w-full max-w-[330px] items-center gap-y-3'>
